@@ -19,7 +19,7 @@ print(learn.layer_groups)
 ```
 run these scripts by
 
-```python
+```
 python3 -m torch.distributed.launch --nproc_per_node=2 testDistributeMyModel.py
 ```
 
