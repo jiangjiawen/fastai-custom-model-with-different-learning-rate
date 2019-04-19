@@ -17,3 +17,10 @@ They can split model into 2 layer_groups, you can check it by:
 ```python
 print(learn.layer_groups)
 ```
+run these scripts by
+
+```python
+python3 -m torch.distributed.launch --nproc_per_node=2 testDistributeMyModel.py
+```
+
+If you have 2 gpus on your machine.
