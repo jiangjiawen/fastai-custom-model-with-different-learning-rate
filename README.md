@@ -4,7 +4,7 @@ conv2d with padding code is from here:
 
 https://github.com/Gasoonjia/Tensorflow-type-padding-with-pytorch-conv2d.
 
-thanks.
+thanks a lot.
 
 The core codes are:
 
