@@ -52,22 +52,3 @@ lrs = slice(lr/100,lr)
 learn.fit_one_cycle(12, lrs, pct_start=0.8)
 learn.save('stage-2')
 
-# learn=None
-# gc.collect()
-
-# size = src_size
-# bs=9
-
-# data = (src.transform(get_transforms(),size=size,tfm_y=True).databunch(bs=bs).normalize(custom_stats))
-# learn = unet_learner(data, models.resnet34, loss_func=criterion, metrics=metrics, wd=wd).to_distributed(args.local_rank).load('stage-2')
-
-# lr=7e-5
-# learn.fit_one_cycle(10, slice(lr), pct_start=0.8)
-
-# learn.save('stage-1-big')
-# learn.load('stage-1-big')
-
-# learn.unfreeze()
-# lrs = slice(lr/1000,lr/10)
-# learn.fit_one_cycle(10, lrs)
-# learn.save('stage-2-big')
