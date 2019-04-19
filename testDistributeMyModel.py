@@ -11,8 +11,7 @@ args = parser.parse_args()
 torch.cuda.set_device(args.local_rank)
 torch.distributed.init_process_group(backend='nccl', init_method='env://')
 
-# DATA_PATH = '/share/share/data/LTIS/INTE_DATA/TH+LTIS_datagen/data_tumor_fastai'
-DATA_PATH = '../data'
+DATA_PATH = 'data'
 def get_y_fn(x):
     return Path(str(x.parent)+'mask')/x.name
 
